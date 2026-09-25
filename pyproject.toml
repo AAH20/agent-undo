@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-undo"
+version = "1.0.0"
+description = "Universal Transactional Rollback & Compensating Sagas for MCP Tools"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Antigravity Autonomous Engineering", email = "engineering@antigravity.dev"}]
+dependencies = []
+
+[project.scripts]
+agent-undo = "agent_undo.cli:main"
